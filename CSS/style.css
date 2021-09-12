@@ -1,0 +1,447 @@
+/* SCROLLBAR BONITINHA */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #1f1f1f black;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CONTROLES */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+button,
+input {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(32, 89%, 8%);
+    /*         box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2); */
+    padding: 16px;
+}
+
+#paginate {
+    width: 100%;
+    margin: 32px auto;
+}
+
+#paginate .item {
+    border-bottom: 1px solid hsl(32, 98%, 12%);
+    padding: 16px 32px;
+}
+
+#paginate .item:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+#paginate .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+#paginate .controls div {
+    cursor: pointer;
+    /* border: 1px solid #eee; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14;
+}
+
+#paginate .controls div:not(.numbers),
+#paginate .controls div.numbers div {
+    width: 40px;
+    height: 40px;
+}
+
+#paginate .controls div.numbers div:hover,
+#paginate .controls div.numbers div.active {
+    color: var(--primary);
+}
+
+
+/* BASE */
+
+body {
+    background-color: #003C4E;
+}
+
+H1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.indextitle h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+    color: #ADE9FF;
+}
+
+.TituloTabelas {
+    padding: 20px;
+    background-color: #ADE9FF;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.tabPostagens {
+    position: relative
+}
+
+.btnVoltar {
+    margin-top: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.btnVoltar button {
+    background-color: #003C4E;
+    color: #ADE9FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.tabela {
+    display: flex;
+    margin-top: 20px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #549ab1;
+    border-radius: 10px;
+}
+
+.perfil {
+    display: grid;
+    grid-template-columns: 0.050fr 1.8fr 1fr;
+    grid-template-rows: 1fr 1fr 0fr;
+    gap: 0px 0px 0px 0px;
+    grid-template-areas: "cont Title Title" "body body body" ". . .";
+    width: 100%;
+    height: 100px;
+    background-color: #003C4E;
+    border-radius: 10px;
+    border: 2px solid #ADE9FF;
+    padding: 1%;
+    margin-top: 10px;
+    color: #ADE9FF;
+}
+
+.title {
+    grid-area: title;
+}
+
+.body {
+    grid-area: body;
+}
+
+.cont {
+    grid-area: cont;
+}
+
+
+/* PHOTOS CSS */
+
+.photosTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003C4E;
+    border-radius: 15px;
+}
+
+.photosTable {
+    position: relative;
+    width: 970px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.photosTable .card {
+    position: relative;
+    max-width: 280px;
+    height: 480px;
+    background-color: #ADE9FF;
+    margin: 5px 5px;
+    padding: 15px 15px;
+    flex-direction: column;
+    transition: 0.3 ease-in-out;
+    border-radius: 5px;
+}
+
+.photosTable .card:hover {
+    height: 480px;
+    background-color: #cef2ff;
+    border-radius: 20px;
+}
+
+.photosTable .card .imgbox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+img:hover {
+    border-radius: 10px;
+}
+
+.thumb {
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 3px;
+}
+
+.content h2 {
+    font-size: 1.2rem;
+    min-height: 100px;
+}
+
+
+/* TODOS */
+
+
+/* FILTRO */
+
+.filtro {
+    display: flex;
+    margin-top: 20px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    padding: 30px;
+    background-color: #549ab1;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.opcoes {
+    background-color: #ADE9FF;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.opcoes button {
+    background-color: #003C4E;
+    color: #ADE9FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+}
+
+
+/* Table Styles */
+
+.table-wrapper {
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2);
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 900px;
+    max-width: 100%;
+    white-space: nowrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ADE9FF;
+}
+
+.fl-table td,
+.fl-table th {
+    text-align: center;
+    padding: 15px;
+}
+
+.fl-table td {
+    border-right: 1px solid #003C4E;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #003C4E;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #003C4E;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #94c5d6;
+}
+
+
+/* INDEX */
+
+body .containerIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 6%;
+}
+
+body .containerIndex .cardIndex {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    border-radius: 15px;
+    margin: 30px;
+    transition: 0.5s;
+}
+
+body .containerIndex .cardIndex:nth-child(1) .box .contentIndex a {
+    background: #ADE9FF;
+}
+
+body .containerIndex .cardIndex:nth-child(2) .box .contentIndex a {
+    background: #ADE9FF;
+}
+
+body .containerIndex .cardIndex:nth-child(3) .box .contentIndex a {
+    background: #ADE9FF;
+}
+
+body .containerIndex .cardIndex .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #002530;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+body .containerIndex .cardIndex .box:hover {
+    transform: translateY(-50px);
+}
+
+body .containerIndex .cardIndex .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+body .containerIndex .cardIndex .box .contentIndex {
+    padding: 20px;
+    text-align: center;
+}
+
+body .containerIndex .cardIndex .box .contentIndex h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+body .containerIndex .cardIndex .box .contentIndex h3 {
+    font-size: 1.8rem;
+    color: #ADE9FF;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+body .containerIndex .cardIndex .box .contentIndex p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+body .containerIndex .cardIndex .box .contentIndex a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+body .containerIndex .cardIndex .box .contentIndex a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+}
